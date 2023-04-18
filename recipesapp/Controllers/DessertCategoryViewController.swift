@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to show all dessert meal options 
 class DessertCategoryViewController: UIViewController {
     
     // MARK: - Properties
