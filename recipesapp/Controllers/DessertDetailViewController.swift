@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Controller to house details for specific meal
 class DessertDetailViewController: UIViewController {
 
     override func viewDidLoad() {
