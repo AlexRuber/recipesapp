@@ -15,6 +15,9 @@ class DessertCategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        
+        let request = RARequest(endpoint: .dessert)
+        print(request.url)
     }
     
     

@@ -20,8 +20,8 @@
 		9859F9A029EF2CBD0072BC5C /* RAMealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F99F29EF2CBD0072BC5C /* RAMealModel.swift */; };
 		9859F9A329EF53AE0072BC5C /* RAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A229EF53AE0072BC5C /* RAService.swift */; };
 		9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A429EF53CC0072BC5C /* RARequest.swift */; };
-		9859F9A729EF54590072BC5C /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A629EF54590072BC5C /* RAEndpoint.swift */; };
 		9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */; };
+		9859F9AB29EF6C670072BC5C /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		9859F99F29EF2CBD0072BC5C /* RAMealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealModel.swift; sourceTree = "<group>"; };
 		9859F9A229EF53AE0072BC5C /* RAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAService.swift; sourceTree = "<group>"; };
 		9859F9A429EF53CC0072BC5C /* RARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RARequest.swift; sourceTree = "<group>"; };
-		9859F9A629EF54590072BC5C /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
 		9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailsModel.swift; sourceTree = "<group>"; };
+		9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,7 +196,7 @@
 			children = (
 				9859F9A229EF53AE0072BC5C /* RAService.swift */,
 				9859F9A429EF53CC0072BC5C /* RARequest.swift */,
-				9859F9A629EF54590072BC5C /* RAEndpoint.swift */,
+				9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -338,9 +338,9 @@
 				9859F99A29EF27410072BC5C /* DessertCategoryViewController.swift in Sources */,
 				9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */,
 				9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */,
+				9859F9AB29EF6C670072BC5C /* RAEndpoint.swift in Sources */,
 				9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */,
 				9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */,
-				9859F9A729EF54590072BC5C /* RAEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

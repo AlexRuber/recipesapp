@@ -8,12 +8,18 @@
 import Foundation
 
 /// Represents unique API endpoint
-@frozen enum RMEndpoint: String {
+@frozen enum RAEndpoint: String, CaseIterable, Hashable {
     
-    /// Endpoint to get meals
-    case meal // "meal" as a string
+    /// Later on we'd want to expand and separate this out by category Dessert, Seafood etc.
     
-    /// Endpoint to get meal details
-    case mealDetails
+    // Filter
+    /// Endpoint to get dessert category meals
+    case dessert = "filter.php?c=Dessert"
+    case seafood = "filter.php?c=Seafood"
+    
+    // Lookup
+    /// Endpoint to get specific meal details
+    case mealDetails = "lookup.php?i="
     
 }
+
