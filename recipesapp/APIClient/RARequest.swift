@@ -78,3 +78,8 @@ final class RARequest {
         self.queryParameters = queryParameters
     }
 }
+
+extension RARequest {
+    static let getMealDetailsRequest = RARequest(endpoint: .mealDetails)
+    static let getAllDesserts = RARequest(endpoint: .dessert)
+}

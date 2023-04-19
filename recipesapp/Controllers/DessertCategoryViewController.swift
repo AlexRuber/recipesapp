@@ -17,7 +17,17 @@ class DessertCategoryViewController: UIViewController {
         setupUI()
         
         let request = RARequest(endpoint: .dessert)
-        print(request.url)
+        //print(request.url)
+        
+        RAService.shared.execute(.getAllDesserts, expecting: RAMealsAPIResponse.self) { result in
+            switch result {
+            case .success(let model):
+                print("Total: \(model.meals.count)")
+                print("Model: \(model)")
+            case .failure(let error):
+                print(String(describing: error))
+            }
+        }
     }
     
     
