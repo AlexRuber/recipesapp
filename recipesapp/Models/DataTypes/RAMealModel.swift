@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RMMealModel: Codable {
+struct RAMealModel: Codable {
     let strMeal: String
     let strMealThumb: String
     let idMeal: String

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */; };
+		984E8F9229F08FDF00183C2F /* RAMealsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */; };
 		9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F96529EF1F8E0072BC5C /* AppDelegate.swift */; };
 		9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F96729EF1F8E0072BC5C /* SceneDelegate.swift */; };
 		9859F96D29EF1F8E0072BC5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9859F96B29EF1F8E0072BC5C /* Main.storyboard */; };
@@ -21,7 +23,6 @@
 		9859F9A329EF53AE0072BC5C /* RAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A229EF53AE0072BC5C /* RAService.swift */; };
 		9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A429EF53CC0072BC5C /* RARequest.swift */; };
 		9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */; };
-		9859F9AB29EF6C670072BC5C /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
+		984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealsAPIResponse.swift; sourceTree = "<group>"; };
 		9859F96229EF1F8E0072BC5C /* recipesapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipesapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9859F96529EF1F8E0072BC5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9859F96729EF1F8E0072BC5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +63,6 @@
 		9859F9A229EF53AE0072BC5C /* RAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAService.swift; sourceTree = "<group>"; };
 		9859F9A429EF53CC0072BC5C /* RARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RARequest.swift; sourceTree = "<group>"; };
 		9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailsModel.swift; sourceTree = "<group>"; };
-		9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		984E8F8D29F08E7900183C2F /* DataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				9859F99F29EF2CBD0072BC5C /* RAMealModel.swift */,
+				9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */,
+			);
+			path = DataTypes;
+			sourceTree = "<group>";
+		};
+		984E8F8E29F08E8100183C2F /* APIResponseTypes */ = {
+			isa = PBXGroup;
+			children = (
+				984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */,
+			);
+			path = APIResponseTypes;
+			sourceTree = "<group>";
+		};
 		9859F95929EF1F8E0072BC5C = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +162,8 @@
 		9859F99529EF203D0072BC5C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9859F99F29EF2CBD0072BC5C /* RAMealModel.swift */,
-				9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */,
+				984E8F8E29F08E8100183C2F /* APIResponseTypes */,
+				984E8F8D29F08E7900183C2F /* DataTypes */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,7 +215,7 @@
 			children = (
 				9859F9A229EF53AE0072BC5C /* RAService.swift */,
 				9859F9A429EF53CC0072BC5C /* RARequest.swift */,
-				9859F9AA29EF6C670072BC5C /* RAEndpoint.swift */,
+				984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -338,9 +357,10 @@
 				9859F99A29EF27410072BC5C /* DessertCategoryViewController.swift in Sources */,
 				9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */,
 				9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */,
-				9859F9AB29EF6C670072BC5C /* RAEndpoint.swift in Sources */,
 				9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */,
 				9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */,
+				984E8F9229F08FDF00183C2F /* RAMealsAPIResponse.swift in Sources */,
+				984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
