@@ -11,38 +11,42 @@ import UIKit
 class DessertCategoryViewController: UIViewController {
     
     // MARK: - Properties
+    
+    private let dessertListView = DessertListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        
-        let request = RARequest(endpoint: .dessert)
-        //print(request.url)
-        
-        RAService.shared.execute(.getAllDesserts, expecting: RAMealsAPIResponse.self) { result in
-            switch result {
-            case .success(let model):
-                print("Total: \(model.meals.count)")
-                print("Model: \(model)")
-            case .failure(let error):
-                print(String(describing: error))
-            }
-        }
     }
     
-    
-    // MARK: -  Methods
-    private func setupUI() {
-        
+    private func setupNavigationBar() {
         // Navigation Bar
         self.title = "Desserts"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         self.navigationItem.largeTitleDisplayMode = .always
+    }
+    
+    private func setupMealListView() {
+        view.addSubview(dessertListView)
+        NSLayoutConstraint.activate([dessertListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+                                     dessertListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+                                     dessertListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+                                     dessertListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
+    }
+    
+    
+    // MARK: -  Methods
+    private func setupUI() {
+        // Navigation Bar
+        setupNavigationBar()
+        
+        // Dessert List View
+        setupMealListView()
         
         // Background
         self.view.backgroundColor = .systemBackground
-
+        
     }
     
     
