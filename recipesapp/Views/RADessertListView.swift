@@ -1,5 +1,5 @@
 //
-//  DessertListView.swift
+//  RADessertListView.swift
 //  recipesapp
 //
 //  Created by Mihai Ruber on 4/19/23.
@@ -8,7 +8,7 @@
 import UIKit
 
 /// View that displays Dessert list view, loader, etc.
-final class DessertListView: UIView {
+final class RADessertListView: UIView {
     
     //MARK: - Properties
     private let viewModel = DessertListViewViewModel()
@@ -28,7 +28,7 @@ final class DessertListView: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.isHidden = true
         collectionView.alpha = 0
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(RADessertCollectionViewCell.self, forCellWithReuseIdentifier: RADessertCollectionViewCell.cellIdentifier)
         return collectionView
     }()
     

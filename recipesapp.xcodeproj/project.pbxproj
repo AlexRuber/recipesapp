@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		982E218D29F09C0B00F621A2 /* DessertListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */; };
-		982E218F29F09D6400F621A2 /* DessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218E29F09D6400F621A2 /* DessertListView.swift */; };
+		982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218E29F09D6400F621A2 /* RADessertListView.swift */; };
 		984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */; };
 		984E8F9229F08FDF00183C2F /* RAMealsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */; };
 		9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F96529EF1F8E0072BC5C /* AppDelegate.swift */; };
@@ -25,6 +25,8 @@
 		9859F9A329EF53AE0072BC5C /* RAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A229EF53AE0072BC5C /* RAService.swift */; };
 		9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A429EF53CC0072BC5C /* RARequest.swift */; };
 		9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */; };
+		98C8AD9A29F1CD99005CBE26 /* RADessertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8AD9929F1CD99005CBE26 /* RADessertCollectionViewCell.swift */; };
+		98C8AD9C29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8AD9B29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewViewModel.swift; sourceTree = "<group>"; };
-		982E218E29F09D6400F621A2 /* DessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListView.swift; sourceTree = "<group>"; };
+		982E218E29F09D6400F621A2 /* RADessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RADessertListView.swift; sourceTree = "<group>"; };
 		984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
 		984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealsAPIResponse.swift; sourceTree = "<group>"; };
 		9859F96229EF1F8E0072BC5C /* recipesapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipesapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,8 @@
 		9859F9A229EF53AE0072BC5C /* RAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAService.swift; sourceTree = "<group>"; };
 		9859F9A429EF53CC0072BC5C /* RARequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RARequest.swift; sourceTree = "<group>"; };
 		9859F9A829EF57240072BC5C /* RAMealDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailsModel.swift; sourceTree = "<group>"; };
+		98C8AD9929F1CD99005CBE26 /* RADessertCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RADessertCollectionViewCell.swift; sourceTree = "<group>"; };
+		98C8AD9B29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RADessertCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +179,8 @@
 		9859F99629EF204C0072BC5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				982E218E29F09D6400F621A2 /* DessertListView.swift */,
+				982E218E29F09D6400F621A2 /* RADessertListView.swift */,
+				98C8AD9929F1CD99005CBE26 /* RADessertCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */,
+				98C8AD9B29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -366,7 +372,9 @@
 				9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */,
 				9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */,
 				9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */,
-				982E218F29F09D6400F621A2 /* DessertListView.swift in Sources */,
+				98C8AD9C29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift in Sources */,
+				982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */,
+				98C8AD9A29F1CD99005CBE26 /* RADessertCollectionViewCell.swift in Sources */,
 				984E8F9229F08FDF00183C2F /* RAMealsAPIResponse.swift in Sources */,
 				984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */,
 			);
