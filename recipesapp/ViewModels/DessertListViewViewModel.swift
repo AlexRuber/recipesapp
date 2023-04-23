@@ -18,8 +18,8 @@ final class DessertListViewViewModel: NSObject  {
         RAService.shared.execute(request, expecting: RAMealsAPIResponse.self) { result in
             switch result {
             case .success(let model):
-                print("Total: \(model.meals.count)")
-                print("Model: \(model)")
+                print("Total: \(model.meals.first?.strMealThumb ?? "no image")")
+                //print("Model: \(model)")
             case .failure(let error):
                 print(String(describing: error))
             }
@@ -33,8 +33,12 @@ extension DessertListViewViewModel: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .systemGreen
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RADessertCollectionViewCell.cellIdentifier, for: indexPath) as? RADessertCollectionViewCell else {
+            fatalError("Unsupported Cell")
+        }
+        let viewModel = RADessertCollectionViewCellViewModel(dessertName: "Tiramisu", dessertImageUrl: URL(string: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"))
+        cell.configure(with: viewModel)
+        //cell.backgroundColor = .systemGreen
         return cell
     }
     

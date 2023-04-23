@@ -12,7 +12,7 @@ class DessertCategoryViewController: UIViewController {
     
     // MARK: - Properties
     
-    private let dessertListView = DessertListView()
+    private let dessertListView = RADessertListView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
