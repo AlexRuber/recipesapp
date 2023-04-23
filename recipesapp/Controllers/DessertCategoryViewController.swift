@@ -23,7 +23,7 @@ class DessertCategoryViewController: UIViewController {
         // Navigation Bar
         self.title = "Desserts"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.label]
         self.navigationItem.largeTitleDisplayMode = .always
     }
     

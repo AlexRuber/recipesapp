@@ -8,18 +8,41 @@
 import Foundation
 import UIKit
 
+protocol RADessertListViewViewModelDelegate: AnyObject {
+    func didLoadInitialMeals()
+}
+
 /// We want to follow SOLID Principles and have single responsibilities
 
 /// The view model for the Dessert List View - all business logic for this view will live here
 final class DessertListViewViewModel: NSObject  {
+    
+    // MARK: - Properties
+    
+    public weak var delegate: RADessertListViewViewModelDelegate?
+    
+    private var meals: [RAMealModel] = [] {
+        didSet {
+            for meal in meals {
+                let vM = RADessertCollectionViewCellViewModel(dessertName: meal.strMeal, dessertImageUrl: URL(string: meal.strMealThumb), mealId: meal.idMeal)
+                cellViewModels.append(vM)
+            }
+        }
+    }
+    private var cellViewModels: [RADessertCollectionViewCellViewModel] = []
+    
     func fetchDesserts() {
         let request = RARequest(endpoint: .dessert)
         
-        RAService.shared.execute(request, expecting: RAMealsAPIResponse.self) { result in
+        RAService.shared.execute(request, expecting: RAMealsAPIResponse.self) { [weak self] result in
             switch result {
-            case .success(let model):
-                print("Total: \(model.meals.first?.strMealThumb ?? "no image")")
-                //print("Model: \(model)")
+            case .success(let responseModel):
+                let meals = responseModel.meals
+                self?.meals = meals
+                DispatchQueue.main.async {
+                    self?.delegate?.didLoadInitialMeals()
+                }
+                // Refresh the data in the collection view
             case .failure(let error):
                 print(String(describing: error))
             }
@@ -29,14 +52,14 @@ final class DessertListViewViewModel: NSObject  {
 
 extension DessertListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return cellViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RADessertCollectionViewCell.cellIdentifier, for: indexPath) as? RADessertCollectionViewCell else {
             fatalError("Unsupported Cell")
         }
-        let viewModel = RADessertCollectionViewCellViewModel(dessertName: "Tiramisu", dessertImageUrl: URL(string: "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"))
+        let viewModel = cellViewModels[indexPath.row]
         cell.configure(with: viewModel)
         //cell.backgroundColor = .systemGreen
         return cell

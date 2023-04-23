@@ -15,7 +15,8 @@ class RADessertCollectionViewCell: UICollectionViewCell {
     
     private let dessertImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -31,7 +32,6 @@ class RADessertCollectionViewCell: UICollectionViewCell {
         let label = UILabel()
         label.font = UIFont(name: "AvenirNext-Regular", size: 14)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "View Recipe"
         label.textColor = .darkGray
         return label
     }()
@@ -53,6 +53,20 @@ class RADessertCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(dessertImageView)
         contentView.addSubview(dessertNameTitleLabel)
         contentView.addSubview(getRecipeSubtitleLabel)
+        
+
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        setupLayer()
+    }
+    
+    private func setupLayer() {
+        contentView.layer.cornerRadius = 10
+        contentView.layer.shadowOpacity = 0.2
+        contentView.layer.shadowOffset = CGSize(width: -4, height: 4)
+        contentView.layer.shadowColor = UIColor.lightGray.cgColor
     }
 
     private func layoutUI() {
@@ -76,10 +90,10 @@ class RADessertCollectionViewCell: UICollectionViewCell {
         
         // Dessert Image
         NSLayoutConstraint.activate([
-            dessertImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
+            dessertImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
             dessertImageView.bottomAnchor.constraint(equalTo: dessertNameTitleLabel.topAnchor, constant: -5),
-            dessertImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -5),
-            dessertImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 5),
+            dessertImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0),
+            dessertImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 0),
         ])
     }
     
@@ -93,7 +107,8 @@ class RADessertCollectionViewCell: UICollectionViewCell {
     
     public func configure(with viewModel: RADessertCollectionViewCellViewModel) {
         dessertNameTitleLabel.text = viewModel.dessertName
-       
+        getRecipeSubtitleLabel.text = "View Recipe"
+
         viewModel.fetchImage { [weak self] result in
             switch result {
             case .success(let data):
