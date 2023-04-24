@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9823D78A29F64018006F6BB7 /* RAMealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78929F64018006F6BB7 /* RAMealDetailView.swift */; };
+		9823D78C29F64058006F6BB7 /* RAMealDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78B29F64058006F6BB7 /* RAMealDetailViewViewModel.swift */; };
+		9823D78E29F64CBE006F6BB7 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78D29F64CBE006F6BB7 /* ImageManager.swift */; };
 		982E218D29F09C0B00F621A2 /* DessertListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */; };
 		982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218E29F09D6400F621A2 /* RADessertListView.swift */; };
 		984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */; };
@@ -47,6 +50,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9823D78929F64018006F6BB7 /* RAMealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailView.swift; sourceTree = "<group>"; };
+		9823D78B29F64058006F6BB7 /* RAMealDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailViewViewModel.swift; sourceTree = "<group>"; };
+		9823D78D29F64CBE006F6BB7 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewViewModel.swift; sourceTree = "<group>"; };
 		982E218E29F09D6400F621A2 /* RADessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RADessertListView.swift; sourceTree = "<group>"; };
 		984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
@@ -181,6 +187,7 @@
 			children = (
 				982E218E29F09D6400F621A2 /* RADessertListView.swift */,
 				98C8AD9929F1CD99005CBE26 /* RADessertCollectionViewCell.swift */,
+				9823D78929F64018006F6BB7 /* RAMealDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 		9859F99829EF23B00072BC5C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				9823D78D29F64CBE006F6BB7 /* ImageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			children = (
 				982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */,
 				98C8AD9B29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift */,
+				9823D78B29F64058006F6BB7 /* RAMealDetailViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -364,13 +373,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9859F9A329EF53AE0072BC5C /* RAService.swift in Sources */,
+				9823D78E29F64CBE006F6BB7 /* ImageManager.swift in Sources */,
 				982E218D29F09C0B00F621A2 /* DessertListViewViewModel.swift in Sources */,
 				9859F9A029EF2CBD0072BC5C /* RAMealModel.swift in Sources */,
 				9859F99C29EF2A5A0072BC5C /* DessertDetailViewController.swift in Sources */,
 				9859F99A29EF27410072BC5C /* DessertCategoryViewController.swift in Sources */,
 				9859F9A529EF53CC0072BC5C /* RARequest.swift in Sources */,
+				9823D78C29F64058006F6BB7 /* RAMealDetailViewViewModel.swift in Sources */,
 				9859F96629EF1F8E0072BC5C /* AppDelegate.swift in Sources */,
 				9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */,
+				9823D78A29F64018006F6BB7 /* RAMealDetailView.swift in Sources */,
 				9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */,
 				98C8AD9C29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift in Sources */,
 				982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */,

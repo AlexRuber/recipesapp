@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol RADessertListViewDelegate: AnyObject {
+    func raDessertListView(_ dessertListView: RADessertListView, didSelectMeal: RAMealModel)
+}
+
 /// View that displays Dessert list view, loader, etc.
 final class RADessertListView: UIView {
    
     //MARK: - Properties
     private let viewModel = DessertListViewViewModel()
+    
+    public weak var delegate: RADessertListViewDelegate?
 
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -78,6 +84,10 @@ final class RADessertListView: UIView {
 
 /// RADessertListViewViewModelDelegate delegate methods
 extension RADessertListView: RADessertListViewViewModelDelegate {
+    func didSelectMeal(_ meal: RAMealModel) {
+        delegate?.raDessertListView(self, didSelectMeal: meal)
+    }
+    
     func didLoadInitialMeals() {
         
         spinner.stopAnimating()
