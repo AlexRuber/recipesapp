@@ -17,6 +17,7 @@ class DessertCategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        dessertListView.delegate = self
     }
     
     private func setupNavigationBar() {
@@ -35,7 +36,6 @@ class DessertCategoryViewController: UIViewController {
                                      dessertListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
     }
     
-    
     // MARK: -  Methods
     private func setupUI() {
         // Navigation Bar
@@ -48,7 +48,16 @@ class DessertCategoryViewController: UIViewController {
         self.view.backgroundColor = .systemBackground
         
     }
-    
-    
+}
 
+// MARK: - RADessertListViewDelegate Protocol Methods
+extension DessertCategoryViewController: RADessertListViewDelegate {
+    func raDessertListView(_ dessertListView: RADessertListView, didSelectMeal meal: RAMealModel) {
+        // Open detail/recipes for that meal/dessert
+        let viewModel = RAMealDetailViewViewModel(meal: meal)
+        let mealDetailVC = DessertDetailViewController(viewModel: viewModel)
+        mealDetailVC.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(mealDetailVC, animated: true)
+    }
+    
 }

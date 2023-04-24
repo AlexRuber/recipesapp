@@ -10,6 +10,7 @@ import UIKit
 
 protocol RADessertListViewViewModelDelegate: AnyObject {
     func didLoadInitialMeals()
+    func didSelectMeal(_ meal: RAMealModel)
 }
 
 /// We want to follow SOLID Principles and have single responsibilities
@@ -31,6 +32,7 @@ final class DessertListViewViewModel: NSObject  {
     }
     private var cellViewModels: [RADessertCollectionViewCellViewModel] = []
     
+    /// Fetch initial set of meals (20)
     func fetchDesserts() {
         let request = RARequest(endpoint: .dessert)
         
@@ -48,7 +50,18 @@ final class DessertListViewViewModel: NSObject  {
             }
         }
     }
+    
+    /// Paginate if additional meals are needed when user scrolls to bottom
+    public func fetchAdditionalMeals() {
+        
+    }
+    
+    public var shouldShowLoadMoreIndiciator: Bool {
+        return false
+    }
 }
+
+// MARK: - CollectionView Protocol Methods
 
 extension DessertListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -71,6 +84,13 @@ extension DessertListViewViewModel: UICollectionViewDataSource, UICollectionView
         let width = (bounds.width-30)/2
         
         return CGSize(width: width, height: width*1.5)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let meal = meals[indexPath.row]
+        delegate?.didSelectMeal(meal)
     }
     
 }
