@@ -19,7 +19,7 @@ import Foundation
     
     // Lookup
     /// Endpoint to get specific meal details
-    case mealDetails = "lookup.php?i="
+    case mealDetails = "lookup.php"
     
 }
 

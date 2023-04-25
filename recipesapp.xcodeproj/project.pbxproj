@@ -10,6 +10,7 @@
 		9823D78A29F64018006F6BB7 /* RAMealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78929F64018006F6BB7 /* RAMealDetailView.swift */; };
 		9823D78C29F64058006F6BB7 /* RAMealDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78B29F64058006F6BB7 /* RAMealDetailViewViewModel.swift */; };
 		9823D78E29F64CBE006F6BB7 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78D29F64CBE006F6BB7 /* ImageManager.swift */; };
+		9823D79029F6545D006F6BB7 /* RAMealDetailsAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9823D78F29F6545D006F6BB7 /* RAMealDetailsAPIResponse.swift */; };
 		982E218D29F09C0B00F621A2 /* DessertListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */; };
 		982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982E218E29F09D6400F621A2 /* RADessertListView.swift */; };
 		984E8F8C29F08C2B00183C2F /* RAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */; };
@@ -53,6 +54,7 @@
 		9823D78929F64018006F6BB7 /* RAMealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailView.swift; sourceTree = "<group>"; };
 		9823D78B29F64058006F6BB7 /* RAMealDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailViewViewModel.swift; sourceTree = "<group>"; };
 		9823D78D29F64CBE006F6BB7 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		9823D78F29F6545D006F6BB7 /* RAMealDetailsAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMealDetailsAPIResponse.swift; sourceTree = "<group>"; };
 		982E218C29F09C0B00F621A2 /* DessertListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewViewModel.swift; sourceTree = "<group>"; };
 		982E218E29F09D6400F621A2 /* RADessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RADessertListView.swift; sourceTree = "<group>"; };
 		984E8F8B29F08C2B00183C2F /* RAEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAEndpoint.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				984E8F9129F08FDF00183C2F /* RAMealsAPIResponse.swift */,
+				9823D78F29F6545D006F6BB7 /* RAMealDetailsAPIResponse.swift */,
 			);
 			path = APIResponseTypes;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				9859F96829EF1F8E0072BC5C /* SceneDelegate.swift in Sources */,
 				9823D78A29F64018006F6BB7 /* RAMealDetailView.swift in Sources */,
 				9859F9A929EF57240072BC5C /* RAMealDetailsModel.swift in Sources */,
+				9823D79029F6545D006F6BB7 /* RAMealDetailsAPIResponse.swift in Sources */,
 				98C8AD9C29F1CEFA005CBE26 /* RADessertCollectionViewCellViewModel.swift in Sources */,
 				982E218F29F09D6400F621A2 /* RADessertListView.swift in Sources */,
 				98C8AD9A29F1CD99005CBE26 /* RADessertCollectionViewCell.swift in Sources */,

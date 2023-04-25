@@ -5,144 +5,83 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
-         <BreakpointContent
-            uuid = "2948A893-C764-4B57-9649-CE047E46C050"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            symbolName = ""
-            moduleName = "">
-            <Locations>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F54E0D62-A33F-4B54-8C0B-9DF817B26051"
+            uuid = "9FAA3CD6-1D43-4370-A465-3099D220CD7D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recipesapp/Views/DessertListView.swift"
+            filePath = "recipesapp/ViewModels/RAMealDetailViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "setupCollectionView()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchMealDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1293B281-AD9C-4506-BF55-2D5EDAE71DE3"
+            uuid = "73A8D9FF-24F4-4DA7-94CC-CCF774CF08EF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recipesapp/Views/DessertListView.swift"
+            filePath = "recipesapp/ViewModels/RAMealDetailViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "setupCollectionView()"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchMealDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9B0BEF1E-9D13-43B1-B875-CA52565058A5"
+            uuid = "1161625D-D211-4F0A-B989-9AF9BFFA06A8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recipesapp/Views/RADessertCollectionViewCell.swift"
+            filePath = "recipesapp/ViewModels/RAMealDetailViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "configure(with:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchMealDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "60180322-7A45-45D5-8FE3-483BEEB95F3D"
+            uuid = "3D064880-D16C-49D8-9C50-B94A8FE54646"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recipesapp/Views/RADessertCollectionViewCell.swift"
+            filePath = "recipesapp/ViewModels/RAMealDetailViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
-            landmarkName = "configure(with:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "fetchMealDetails()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "770ACA58-496A-4A28-8608-15640E430A0A"
+            uuid = "79F685CB-51EA-4558-B738-FBB947414664"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "recipesapp/ViewModels/DessertListViewViewModel.swift"
+            filePath = "recipesapp/ViewModels/RAMealDetailViewViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "DessertListViewViewModel"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BF449E4B-7F61-400E-8A1A-BA0D85BD310A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "recipesapp/ViewModels/DessertListViewViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "DessertListViewViewModel"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "75E94C98-ACEB-4C1B-ADC5-7AE72DD8B3F0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "recipesapp/ViewModels/DessertListViewViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "fetchDesserts()"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "fetchMealDetails()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "026B882E-BE74-4B1A-9D0F-5FD0E851A1D7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "recipesapp/ViewModels/DessertListViewViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "DessertListViewViewModel"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -10,14 +10,14 @@ import Foundation
 struct RAMealDetailsModel: Codable {
     
     /// Basic Info
-    let idMeal: String
+    let idMeal: String?
     let strMeal: String?
     let strDrinkAlternate: String?
-    let strCategory: String
-    let strArea: String
-    let strInstructions: String
-    let strMealThumb: String
-    let strTags: String
+    let strCategory: String?
+    let strArea: String?
+    let strInstructions: String?
+    let strMealThumb: String?
+    let strTags: String?
 
     /// Ingredients
     let strIngredient1: String?
@@ -35,7 +35,7 @@ struct RAMealDetailsModel: Codable {
     let strIngredient13: String?
     let strIngredient14: String?
     let strIngredient15: String?
-    let strIngredient16: String
+    let strIngredient16: String?
     let strIngredient17: String?
     let strIngredient18: String?
     let strIngredient19: String?

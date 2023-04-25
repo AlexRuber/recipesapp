@@ -58,7 +58,6 @@ final class RADessertListView: UIView {
         spinner.startAnimating()
     }
     
-    
     private func layoutUI() {
         NSLayoutConstraint.activate([
             spinner.widthAnchor.constraint(equalToConstant: 100),

@@ -43,7 +43,6 @@ final class RAService {
             // Decode the response
             do {
                 let result = try JSONDecoder().decode(type.self, from: data)
-                print(result)
                 completion(.success(result))
                 // We need to decode it to the type that the completion is expecting (Type T Generic)
             } catch {
