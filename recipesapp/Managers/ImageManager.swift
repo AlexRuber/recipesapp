@@ -26,7 +26,6 @@ final class ImageLoader {
         
         // Check if the data is already in the cache
         if let data  = imageDataCache.object(forKey: key) {
-            print("Using cached image \(data)")
             completion(.success(data as Data))
             return
         }

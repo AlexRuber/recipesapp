@@ -42,11 +42,9 @@ final class RAMealDetailViewViewModel {
         let request = RARequest(endpoint: .mealDetails, queryParameters: queryParam)
 
         RAService.shared.execute(request, expecting: RAMealsDetailsAPIResponse.self) { [weak self] result in
-            print(result)
             switch result {
             case .success(let mealDetails):
                 DispatchQueue.main.async {
-                    print("The meal details are: \(mealDetails)")
                     self?.delegate?.didLoadMealDetails(meal: mealDetails)
                 }
                 // Refresh the data in the collection view
