@@ -9,6 +9,7 @@ import UIKit
 
 /// Controller to house details for specific meal
 final class DessertDetailViewController: UIViewController {
+
     
     // MARK: - Properties
     
@@ -32,9 +33,13 @@ final class DessertDetailViewController: UIViewController {
 
         setupView()
         layoutView()
+        detailView.configure(with: viewModel)
+        
     }
     
     private func setupView() {
+        
+        
         title = viewModel.mealTitle
         self.view.backgroundColor = .systemBackground
         view.addSubview(detailView)
@@ -48,5 +53,6 @@ final class DessertDetailViewController: UIViewController {
                                      detailView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)])
         
     }
+    
 
 }
