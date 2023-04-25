@@ -10,30 +10,15 @@ Shows all desserts in the Dessert Category. You can click into a specific desser
 
 ### Dependencies
 
-n/a
+[n/a](https://www.themealdb.com/api.php)
 
 ### Installing
 
-Just clone and launch 
+Just clone and launch and run on latest XCode version 
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
 Contributors names and contact info
 
 ex. Alex Ruber 
-ex. [@DomPizzie](https://twitter.com/dompizzie)
